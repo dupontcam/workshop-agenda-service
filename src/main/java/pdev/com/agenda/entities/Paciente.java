@@ -17,6 +17,8 @@ public class Paciente {
     private Long id;
     private String nome;
     private String sobrenome;
+
+    @Column(unique = true)
     private String cpf;
 
     @Column(unique = true)
